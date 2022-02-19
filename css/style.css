@@ -1,0 +1,246 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+
+/* Common styles */
+*, *::before, *::after
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body
+{
+    width: 100vw;
+    min-height: 100vh;
+    font-family: Montserrat;
+    font-size: calc(12px + (16 - 12) * ((100vw - 320px) / (1920 - 320)));
+    color: #333;
+}
+
+.wrapper
+{
+    width: 100%;
+    height: 100vh;
+    background-color: #E5E5E5;
+}
+
+/* Global styles */
+.container
+{
+    width: 100%;
+    max-width: 1770px;
+    margin: 0 auto;
+}
+
+.button
+{
+    background-color: #FF9900;
+    border: 0;
+    cursor: pointer;
+}
+
+.button-span
+{
+    font-weight: 700;
+    font-size: 1rem;
+    line-height: 20px;
+    color: #fff;
+}
+
+.page-article
+{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 20px;
+}
+
+.page-title
+{
+    font-size: 3rem;
+    line-height: 59px;
+}
+
+.link
+{
+    text-decoration: none;
+}
+
+/* Header styles */
+.header
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.header-navigation
+{
+    background-color: #fff;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    padding: 14px 75px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-logo
+{
+
+}
+
+.logo-link
+{
+    display: flex;    
+}
+
+.header-logo__logo
+{
+    width: 100%;
+    max-width: 224px;
+    height: 100vh;
+    max-height: 72px;
+}
+
+.header-navbar
+{
+    display: flex;
+    align-items: center;
+}
+
+.header-navbar__header-links
+{
+    display: flex;
+}
+
+.header-links
+{
+    list-style: none;
+    display: flex;
+    margin: 0 calc(25px + (85 - 25) * ((100vw - 320px) / (1920 - 320))) 0 0;
+}
+
+.header-links__link
+{
+
+}
+
+.header-links__link:not(:last-child)
+{
+    margin: 0 calc(25px + (85 - 25) * ((100vw - 320px) / (1920 - 320))) 0 0;
+}
+
+.header-link
+{
+    font-weight: 600;
+    font-size: 1.125rem;
+    line-height: 22px;
+    color: inherit;
+}
+
+.header-navbar__header-button
+{
+    justify-self: end;
+    background-color: transparent;
+    border: 0;
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+}
+
+.header-button__search-icon
+{
+    fill: #333;
+}
+
+.header-navbar__header-button:hover .header-button__search-icon
+{
+    fill: #FF9900;
+    stroke: #FF9900;
+}
+
+/* .header-navbar__header-button:hover .header-button__search-icon rect
+{
+    fill: #FF9900;
+}
+
+.header-navbar__header-button:hover .header-button__search-icon path
+{
+    stroke: #FF9900;
+} */
+
+.header-button
+{
+
+}
+
+.header-button__search-icon
+{
+
+}  
+
+
+.swiper
+{
+
+}
+
+.swiper-wrapper
+{
+
+}
+
+.swiper__order-block
+{
+
+}
+
+.order-block
+{
+
+}
+
+.order-block__title
+{
+
+}
+
+.order-block__article
+{
+
+}
+
+.order-block__button
+{
+
+}
+
+.button
+{
+
+}
+
+.button-span
+{
+
+}
+
+.swiper-slide
+{
+
+}
+
+.swiper-pagination
+{
+
+}
+
+/* Main styles */
+
+/* Footer styles */
+
+/* Media queries */
+
+/* Keyframes */
