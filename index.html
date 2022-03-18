@@ -11,9 +11,55 @@
 </head>
 <body>
     <div class="wrapper">
+        <!-- Burger Menu -->
+        <div class="burger-wrapper _hidden">
+            <div class="menu-burger">
+                <div class="search-bar">
+                    <div class="search-bar__inputs">
+                        <input type="text" placeholder="Что будем искать?" class="search-bar__input">
+                        <div class="search-bar__underline"></div>
+                    </div>
+                    <button class="header-navbar__header-button header-button" id="search">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" class="header-button__search-icon search-icon">
+                            <rect width="7.56126" height="1.89031" transform="matrix(0.713342 0.700816 -0.713342 0.700816 18.6062 17.3762)" />
+                            <path d="M20.9303 10.7726C20.9303 16.1533 16.4855 20.5452 10.9652 20.5452C5.44478 20.5452 1 16.1533 1 10.7726C1 5.39198 5.44478 1 10.9652 1C16.4855 1 20.9303 5.39198 20.9303 10.7726Z" stroke="#FF9900" stroke-width="2" fill="transparent" />
+                        </svg>
+                    </button>
+                </div>
+                <ul class="menu-burger__header-links header-links">
+                    <li class="header-links__link">
+                        <a href="#" class="header-link link">
+                            О нас
+                        </a>
+                    </li>
+                    <li class="header-links__link">
+                        <a href="#" class="header-link link">
+                            Проекты
+                        </a>
+                    </li>
+                    <li class="header-links__link">
+                        <a href="#" class="header-link link">
+                            Этапы
+                        </a>
+                    </li>
+                    <li class="header-links__link">
+                        <a href="#" class="header-link link">
+                            Отзывы
+                        </a>
+                    </li>
+                    <li class="header-links__link">
+                        <a href="#" class="header-link link">
+                            Контакты
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
         <header class="header">
             <nav class="header-navigation">
-                <button class="burger-button _hidden" id="burger-open"></button>
+                <button class="burger-button _hidden" id="burger-open">
+                    <span class="burger-button__center"></span>
+                </button>
                 <a href="#" class="header-logo logo-link">
                     <img src="img/logo.svg" alt="Logo" class="header-logo__logo">
                 </a>
@@ -65,7 +111,7 @@
                             </svg>
                         </button>
                         <button class="header-searchbar__header-button header-button" id="close-search">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" class="header-button__close-icon">
                                 <rect x="8.95386" y="7.30435" width="11.6645" height="2.33291" transform="rotate(45 8.95386 7.30435)" fill="#999999"/>
                                 <rect x="7.30432" y="15.5524" width="11.6645" height="2.33291" transform="rotate(-45 7.30432 15.5524)" fill="#999999"/>
                                 <circle cx="12" cy="12" r="11" stroke="#999999" stroke-width="2"/>
@@ -73,57 +119,6 @@
                         </button>
                     </div>
                 </div>
-                <!-- Burger Menu -->
-                <!-- <div class="burger-wrapper">
-                    <div class="menu-burger _hidden">
-                        <div class="search-bar">
-                            <div class="search-bar__inputs">
-                                <input type="text" placeholder="Что будем искать?" class="search-bar__input">
-                                <div class="search-bar__underline"></div>
-                            </div>
-                            <button class="header-navbar__header-button header-button" id="search">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" class="header-button__search-icon search-icon">
-                                    <rect width="7.56126" height="1.89031" transform="matrix(0.713342 0.700816 -0.713342 0.700816 18.6062 17.3762)" />
-                                    <path d="M20.9303 10.7726C20.9303 16.1533 16.4855 20.5452 10.9652 20.5452C5.44478 20.5452 1 16.1533 1 10.7726C1 5.39198 5.44478 1 10.9652 1C16.4855 1 20.9303 5.39198 20.9303 10.7726Z" stroke="#FF9900" stroke-width="2" fill="transparent" />
-                                </svg>
-                            </button>
-                            <button class="header-searchbar__header-button header-button" id="close-search">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                                    <rect x="8.95386" y="7.30435" width="11.6645" height="2.33291" transform="rotate(45 8.95386 7.30435)" fill="#999999"/>
-                                    <rect x="7.30432" y="15.5524" width="11.6645" height="2.33291" transform="rotate(-45 7.30432 15.5524)" fill="#999999"/>
-                                    <circle cx="12" cy="12" r="11" stroke="#999999" stroke-width="2"/>
-                                    </svg>
-                            </button>
-                        </div>
-                        <ul class="menu-burger__header-links header-links">
-                            <li class="header-links__link">
-                                <a href="#" class="header-link link">
-                                    О нас
-                                </a>
-                            </li>
-                            <li class="header-links__link">
-                                <a href="#" class="header-link link">
-                                    Проекты
-                                </a>
-                            </li>
-                            <li class="header-links__link">
-                                <a href="#" class="header-link link">
-                                    Этапы
-                                </a>
-                            </li>
-                            <li class="header-links__link">
-                                <a href="#" class="header-link link">
-                                    Отзывы
-                                </a>
-                            </li>
-                            <li class="header-links__link">
-                                <a href="#" class="header-link link">
-                                    Контакты
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div> -->
             </nav>
             <div class="swiper-container header-slider container">
                 <div class="swiper__order-block order-block">
@@ -203,6 +198,167 @@
                                     Качество жизни, они забывают, что сплочённость команды профессионалов представляет собой интересный эксперимент проверки прогресса профессионального сообщества. 
                                 </p>
                             </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="content-block container ourjob">
+                <h1 class="content-block__title page-title">
+                    Как мы работаем
+                </h1>
+                <div class="content-block__tabset tabset">
+                    <input class="tabset__radioinput radio-input" type="radio" name="tabset" id="tab1" aria-controls="1" checked>
+                    <label for="tab1">1 шаг</label>
+                    <input class="tabset__radioinput radio-input" type="radio" name="tabset" id="tab2" aria-controls="2">
+                    <label for="tab2">2 шаг</label>
+                    <input class="tabset__radioinput radio-input" type="radio" name="tabset" id="tab3" aria-controls="3">
+                    <label for="tab3">3 шаг</label>
+                    <input class="tabset__radioinput radio-input" type="radio" name="tabset" id="tab4" aria-controls="4">
+                    <label for="tab4">4 шаг</label>
+
+                    <div class="tabset__tab-panels tab-panels">
+                        <section id="1" class="tabset__tab-panel tab-panel">
+                            <div class="tabset__about-block tabset-about">
+                                <div class="tabset__description-block tabset-description">
+                                    <h2 class="ourjob__title tabset-title">Проводим консультацию</h2>
+                                    <p class="ourjob__article tabset-article">
+                                        Влечет за собой процесс внедрения и модернизации приоритизации разума над эмоциями. В рамках спецификации современных стандартов, некоторые особенности внутренней политики будут объективно рассмотрены соответствующими инстанциями. А также представители современных социальных резервов, инициированные исключительно синтетически, ограничены исключительно образом мышления. Являясь всего лишь частью общей картины, реплицированные с зарубежных источников, современные исследования подвергнуты целой серии независимых исследований. Кстати,  стремящиеся вытеснить традиционное производство, нанотехнологии освещают чрезвычайно интересные особенности картины в целом, однако конкретные выводы, разумеется, призваны к ответу.
+                                    </p>
+                                </div>
+                                <div class="tabset__buttons-block tabset-buttons">
+                                    <button class="tabset__button button" id="more">
+                                        <span class="button-span">
+                                            Подробнее
+                                        </span>
+                                    </button>
+                                    <button class="tabset__button button" id="contract">
+                                        <span class="button-span">
+                                            Договор
+                                        </span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="tabset__img-block tabset-imgblock img-block">
+                                <img src="img/Rectangle 18.jpg" alt="Job" class="tabset__img tabset-img img-block__img">
+                            </div>
+                        </section>
+                        <section id="2" class="tabset__tab-panel tab-panel">
+                            <div class="tabset__about-block tabset-about">
+                                <div class="tabset__description-block tabset-description">
+                                    <h2 class="ourjob__title tabset-title">Составляем смету</h2>
+                                    <p class="ourjob__article tabset-article">
+                                        Внедрения и модернизации приоритизации разума над эмоциями. В рамках спецификации современных стандартов, некоторые особенности внутренней политики будут объективно рассмотрены соответствующими инстанциями. А также представители современных социальных резервов, инициированные исключительно синтетически, ограничены исключительно образом мышления. Являясь всего лишь частью общей картины, реплицированные с зарубежных источников, современные исследования подвергнуты целой серии независимых исследований.
+                                    </p>
+                                </div>
+                                <div class="tabset__buttons-block tabset-buttons">
+                                    <button class="tabset__button button" id="more">
+                                        <span class="button-span">
+                                            Подробнее
+                                        </span>
+                                    </button>
+                                    <button class="tabset__button button" id="contract">
+                                        <span class="button-span">
+                                            Договор
+                                        </span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="tabset__img-block tabset-imgblock img-block">
+                                <img src="img/Rectangle 18 (1).jpg" alt="Job" class="tabset__img tabset-img img-block__img">
+                            </div>
+                        </section>
+                        <section id="3" class="tabset__tab-panel tab-panel">
+                            <div class="tabset__about-block tabset-about">
+                                <div class="tabset__description-block tabset-description">
+                                    <h2 class="ourjob__title tabset-title">Привлекаем подрядчиков</h2>
+                                    <p class="ourjob__article tabset-article">
+                                        Идейные соображения высшего порядка, а также новая модель организационной деятельности требует анализа прогресса профессионального сообщества. Высокий уровень вовлечения представителей целевой аудитории является четким доказательством простого факта: высококачественный прототип будущего проекта напрямую зависит от дальнейших направлений развития. Разнообразный и богатый опыт говорит нам, что новая модель организационной деятельности говорит о возможностях системы массового участия. Принимая во внимание показатели успешности, постоянное информационно-пропагандистское обеспечение нашей деятельности позволяет выполнить важные задания по разработке прогресса профессионального сообщества.
+                                    </p>
+                                </div>
+                                <div class="tabset__buttons-block tabset-buttons">
+                                    <button class="tabset__button button" id="more">
+                                        <span class="button-span">
+                                            Подробнее
+                                        </span>
+                                    </button>
+                                    <button class="tabset__button button" id="contract">
+                                        <span class="button-span">
+                                            Договор
+                                        </span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="tabset__img-block tabset-imgblock img-block">
+                                <img src="img/Rectangle 19.jpg" alt="Job" class="tabset__img tabset-img img-block__img">
+                            </div>
+                        </section>
+                        <section id="4" class="tabset__tab-panel tab-panel">
+                            <div class="tabset__about-block tabset-about">
+                                <div class="tabset__description-block tabset-description">
+                                    <h2 class="ourjob__title tabset-title">Инспектируем все этапы работ</h2>
+                                    <p class="ourjob__article tabset-article">
+                                        Высокий уровень вовлечения представителей целевой аудитории является четким доказательством простого факта: высококачественный прототип будущего проекта напрямую зависит от дальнейших направлений развития. Разнообразный и богатый опыт говорит нам, что новая модель организационной деятельности говорит о возможностях системы массового участия. Принимая во внимание показатели успешности, постоянное информационно-пропагандистское обеспечение нашей деятельности позволяет.
+                                    </p>
+                                </div>
+                                <div class="tabset__buttons-block tabset-buttons">
+                                    <button class="tabset__button button" id="more">
+                                        <span class="button-span">
+                                            Подробнее
+                                        </span>
+                                    </button>
+                                    <button class="tabset__button button" id="contract">
+                                        <span class="button-span">
+                                            Договор
+                                        </span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="tabset__img-block tabset-imgblock img-block">
+                                <img src="img/Rectangle 20.jpg" alt="Job" class="tabset__img tabset-img img-block__img">
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </section>
+            <section class="content-block container questions">
+                <div class="content-block__accordions accordions">
+                    <div class="accordions__accordion accordion">
+                        <input class="accordion-input" type="checkbox" id="chck1">
+                        <label class="accordion-label" for="chck1">Из чего формируется конечная стоимость проекта?</label>
+                        <div class="accordion-content">
+                            <p class="accordion-content__article">
+                                Являясь всего лишь частью общей картины, непосредственные участники технического прогресса призывают нас к новым свершениям, которые, в свою очередь, должны быть своевременно верифицированы. Но высококачественный прототип будущего проекта является качественно новой ступенью первоочередных требований. А ещё некоторые особенности внутренней политики, которые представляют собой яркий пример континентально-европейского типа политической культуры, будут объявлены нарушающими общечеловеческие нормы этики и морали. И нет сомнений, что явные признаки победы институционализации призывают нас к новым свершениям, которые, в свою очередь, должны быть указаны как претенденты на роль ключевых факторов.
+
+                                Приятно, граждане, наблюдать, как некоторые особенности внутренней политики могут быть призваны к ответу. Явные признаки победы институционализации набирают популярность среди определенных слоев населения, а значит, должны быть объединены в целые кластеры себе подобных. Банальные, но неопровержимые выводы, а также многие известные личности призывают нас к новым свершениям, которые, в свою очередь, должны быть представлены в исключительно положительном свете. 
+                            </p>
+                        </div>
+                    </div>
+                    <div class="accordions__accordion accordion">
+                        <input class="accordion-input" type="checkbox" id="chck2">
+                        <label class="accordion-label" for="chck2">У меня есть свой проект. Сможем ли мы его доработать / реализовать?</label>
+                        <div class="accordion-content">
+                            
+                        </div>
+                    </div>
+                    <div class="accordions__accordion accordion">
+                        <input class="accordion-input" type="checkbox" id="chck3">
+                        <label class="accordion-label" for="chck3">У меня есть свой проект. Сможем ли мы его доработать / реализовать?</label>
+                        <div class="accordion-content">
+                            
+                        </div>
+                    </div>
+                    <div class="accordions__accordion accordion">
+                        <input class="accordion-input" type="checkbox" id="chck4">
+                        <label class="accordion-label" for="chck4">У меня есть свой проект. Сможем ли мы его доработать / реализовать?</label>
+                        <div class="accordion-content">
+                            
+                        </div>
+                    </div>
+                    <div class="accordions__accordion accordion">
+                        <input class="accordion-input" type="checkbox" id="chck5">
+                        <label class="accordion-label" for="chck5">У меня есть свой проект. Сможем ли мы его доработать / реализовать?</label>
+                        <div class="accordion-content">
+                            
                         </div>
                     </div>
                 </div>

@@ -4,9 +4,10 @@ document.addEventListener('DOMContentLoaded', () => {
           searchBar = document.querySelector('.header-searchbar'),
           openSearchbutton = document.querySelector('#open-search'),
           closeSearchbutton = document.querySelector('#close-search'),
-          burgeropenButton = document.querySelector('#burger-open');
+          burgeropenButton = document.querySelector('#burger-open'),
+          burgerWrapper = document.querySelector('.burger-wrapper');
     // Declare variables
-    // let
+    // ...
 
     // Initialize slider
     const swiper = new Swiper('.swiper', {
@@ -38,8 +39,15 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Open Burger
     burgeropenButton.addEventListener('click', () => {
-
+        burgerWrapper.classList.remove('_hidden');
+        document.querySelector('.wrapper').style.overflowY = 'hidden';
     });
     // Close burger
-    // ...
+    burgerWrapper.addEventListener('click', (e) => {
+        let delegateBlock = e.target;
+        if (delegateBlock.classList.contains('burger-wrapper')) {
+            burgerWrapper.classList.add('_hidden');
+            document.querySelector('.wrapper').style.overflowY = 'none';
+        }
+    });
 })
